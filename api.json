@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/al-miraj",
     "maintainers": [
       {
@@ -16,71 +16,115 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "al-miraj",
-    "name": "Al-Mi'raj (المعراج)",
-    "aliases": [],
-    "category": "THAN_AL-MI'RAJ",
-    "subcategory": "of djinn",
+    "name": "Al-Mi'raj",
+    "aliases": [
+      { "name": "ٱلْمِعْرَاج", "language": "Arabic" },
+      { "name": "al-miʿrāj", "language": "Arabic (transliteration)" },
+      { "name": "ʿarāj", "language": "Arabic (manuscript variant)" },
+      { "name": "baqrāj", "language": "Arabic (manuscript variant)" },
+      { "name": "al-Maharāj", "language": "Arabic (manuscript variant)" }
+    ],
+    "category": "MYTHOLOGICAL_CREATURE",
+    "subcategory": "Horned hare / Arabic unicorn-rabbit",
     "tags": [
-      "in-illustrations"
+      "arabic-folklore",
+      "qazwini",
+      "wonders-of-creation",
+      "horned-hare",
+      "indian-ocean",
+      "iskandar",
+      "alexander-romance",
+      "medieval"
     ],
     "status": "documented",
     "description": {
-      "summary": "The Al-Mi'raj is a legendary creature from Islamic folklore, described as a large yellow rabbit with a single black spiraling horn protruding from its forehead.",
-      "full": "The Al-Mi'raj is a legendary creature from Islamic folklore, described as a large yellow rabbit with a single black spiraling horn protruding from its forehead. Despite its seemingly harmless and cute appearance, medieval Islamic texts portray this creature as ferociously carnivorous and capable of killing prey much larger than itself, including humans and other animals. Originating from accounts of a mysterious island in the Indian Ocean, the Al-Mi'raj represents a recurring theme in medieval bestiaries: the danger of underestimating creatures based on their benign appearance. The creature has fascinated scholars as a potential Islamic influence on European unicorn mythology and as an example of medieval natural history's blend of observation and imagination."
+      "summary": "Al-Mi'raj is a yellow, hare- or rabbit-like creature with a single black horn described in medieval Arabic 'wonders' literature, most famously in Zakariya al-Qazwini's 13th-century Marvels of Things Created. It is said to live on Dragon Island in the Indian Ocean and to drive all other beasts to flight at the sight of it.",
+      "full": "Al-Mi'raj (Arabic: ٱلْمِعْرَاج, al-miʿrāj) is a mythical creature of medieval Arabic literature. Its earliest sustained description is in the cosmographical work ʿAjāʾib al-Makhlūqāt wa Gharāʾib al-Mawjūdāt ('Marvels of Things Created and Miraculous Aspects of Things Existing', also known as The Wonders of Creation) by the 13th-century Persian polymath Zakariya al-Qazwini (c. 1203–1283). Qazwini describes the al-mi'raj as a yellow beast resembling a hare or rabbit in size and shape, distinguished by a single prominent black horn rising from its head like that of a unicorn. The animal is said to inhabit a place called Jazīrat al-Tinnīn ('Dragon Island' or 'Sea-Serpent Island') in the Indian Ocean. According to a version of the legend of Iskandar (Alexander the Great), the islanders gave the creature to him as a gift after he defeated a dragon menacing their flocks. Despite its small, otherwise rabbit-like form, the al-mi'raj is described as fearsome: all wild beasts flee at the sight of it, and Arabic and Persian sources treat it as dangerous to humans as well. The oldest surviving illustrated manuscripts of Qazwini's text — including Bavarian State Library Cod. arab. 464, dated to c. 1279/1280 or 1377 — preserve early depictions of the creature. Qazwini's al-Mi'raj sits within a wider Arabic-Persian tradition of horned hares and 'unicorns' that overlaps with the European jackalope motif and with the karkadann."
     },
     "etymology": {
-      "origin": "Islamic/Arabic",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Arabic; manuscript transmission yields several variants (al-miʿrāj, ʿarāj, baqrāj, al-Maharāj).",
+      "meaning": "The standard form al-miʿrāj is unrelated to the better-known Islamic term miʿrāj for the Prophet Muhammad's ascent to heaven; the creature's name is treated as a proper noun.",
+      "first_use": "13th century, in Qazwini's Marvels of Things Created."
     }
   },
+
   "classification": {
     "taxonomy": {
-      "category": "THAN_AL-MI'RAJ",
-      "type": "of djinn",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "category": "MYTHOLOGICAL_CREATURE",
+      "type": "Horned hare",
+      "subtype": "Arabic / Persian unicorn-rabbit",
+      "variant": "Marvels-of-creation literature"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "karkadann", "name": "Karkadann", "relationship": "similar", "description": "Persian / Arabic single-horned beast, sometimes equated with the rhinoceros, often appearing in the same wonders literature" },
+      { "id": "jackalope", "name": "Jackalope", "relationship": "similar", "description": "North American horned-hare folkloric creature with later popular and taxidermy traditions" },
+      { "id": "abada", "name": "Abada", "relationship": "similar", "description": "Two-horned Central African 'unicorn' with antidotal properties" },
+      { "id": "unicorn", "name": "Unicorn", "relationship": "similar", "description": "European single-horned mythical creature" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "coloration": ["yellow"],
+      "features": [
+        { "feature": "Single black horn", "description": "A long, prominent black horn on the forehead, the al-Mi'raj's defining feature.", "frequency": "always" },
+        { "feature": "Hare- or rabbit-like body", "description": "General body shape and size of a hare or rabbit, yellow in colour.", "frequency": "always" }
+      ],
+      "morphology": "Small leporid form bearing a single straight black horn; a hare-with-horn rather than an antelope or equine."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Causes other animals to flee", "description": "All wild beasts are said to flee at the sight of the al-Mi'raj.", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Aggression", "description": "Despite its size, said to be highly aggressive and capable of defeating much larger adversaries.", "frequency": "common", "evidence_level": "folklore" }
+    ],
     "behavior": {
       "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "disposition": "aggressive",
+      "social_structure": "solitary",
+      "habitat_preference": ["Jazīrat al-Tinnīn ('Dragon Island') in the Indian Ocean", "remote and unmapped islands of the marvels-literature world-picture"],
+      "diet": "Variously said to be carnivorous in some retellings",
+      "patterns": [
+        "Drives all other beasts before it",
+        "Used in the Iskandar legend as a unique royal gift"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Islamic/Arabic",
-      "continents": [],
+      "description": "A creature of Arabic-Persian wonders literature; located in the storyworld of the medieval Indian Ocean, on the unmapped 'Dragon Island'.",
+      "continents": ["Asia"],
       "countries": [],
-      "regions": []
+      "regions": ["Jazīrat al-Tinnīn (Dragon Island) of medieval Arabic cosmography", "Indian Ocean of the marvels tradition"]
     },
     "hotspots": [],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "c. 1260",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Zakariya al-Qazwini, Marvels of Things Created (ʿAjāʾib al-Makhlūqāt)"
+      },
+      "peak_activity_periods": [
+        { "period": "13th–15th centuries", "description": "Manuscript transmission and illustration of Qazwini's Marvels of Things Created" }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Islamic/Arabic",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Arabic and Persian cosmographical and 'wonders of creation' literature of the 13th century, drawing on earlier Greek, Mesopotamian, and Indian sources.",
+      "earliest_accounts": "Qazwini's Marvels of Things Created (c. 1260), as preserved in 13th- and 14th-century manuscripts.",
+      "folklore_connections": "Connected to the Alexander Romance via the Iskandar / Dragon Island episode and to the broader medieval network of horned-hare and unicorn motifs."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "c. 1260", "event": "Zakariya al-Qazwini composes ʿAjāʾib al-Makhlūqāt wa Gharāʾib al-Mawjūdāt (Marvels of Things Created)", "significance": "Earliest sustained description of the al-Mi'raj", "source": "Qazwini (c. 1260)" },
+      { "date": "c. 1279", "event": "Earliest surviving illustrated manuscript of Qazwini's Marvels of Things Created (Bavarian State Library, Cod. arab. 464)", "significance": "Preserves early visual depictions of the al-Mi'raj", "source": "Bavarian State Library, Cod. arab. 464, fol. 63" }
+    ],
+    "modern_era": "The al-Mi'raj survives chiefly through manuscript scholarship and modern fantasy and gaming reuse. It is a stock 'monster manual' creature in Western fantasy bestiaries and continues to draw scholarly attention as a node in the wider horned-hare motif."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -91,35 +135,103 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "al-miraj-evidence-qazwini",
+        "type": "manuscript",
+        "name": "Qazwini, ʿAjāʾib al-Makhlūqāt entry on al-Mi'raj",
+        "date": "c. 1260",
+        "description": "Qazwini's textual and illustrated entry describing the al-Mi'raj.",
+        "status": "verified",
+        "analysis": "Earliest sustained primary source; preserved in multiple 13th- and 14th-century manuscripts including Cod. arab. 464.",
+        "source": "Qazwini, ʿAjāʾib al-Makhlūqāt (c. 1260)"
+      }
+    ]
   },
+
   "theories": {
     "paranormal": [],
-    "scientific": [],
-    "skeptical": []
+    "scientific": [
+      {
+        "name": "Mythologised horned hare",
+        "description": "The al-Mi'raj is best understood as a literary horned-hare motif, related to other Eurasian horned-hare and unicorn traditions and partly underwritten by the real phenomenon of leporids with the cottontail papillomavirus, which produces horn-like keratin growths.",
+        "proponents": [],
+        "evidence_cited": ["Cross-cultural horned-hare iconography", "Modern documentation of papillomavirus-induced 'horns' on hares and rabbits"]
+      }
+    ],
+    "skeptical": [
+      {
+        "name": "Wonders-literature creature",
+        "description": "Modern scholars treat the al-Mi'raj as a literary creature of the marvels tradition rather than a zoological claim. Its placement on the unmapped 'Dragon Island' marks it as part of the conventional 'edges of the world' geography of medieval cosmography.",
+        "proponents": ["Modern Arabic-manuscript and history-of-science scholars"],
+        "evidence_cited": ["Genre conventions of ʿajāʾib literature", "Use of Dragon Island as a generic Arabic 'island of marvels'"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Arabic-Persian ʿajāʾib al-makhlūqāt ('wonders of creation') literature",
+        "Iskandar / Alexander Romance traditions"
+      ],
+      "stories": [
+        "Iskandar receives the al-Mi'raj as a gift after killing the dragon of Dragon Island"
+      ],
+      "beliefs": "Treated within the wonders-literature framework as a real but remote creature of the Indian Ocean."
     },
     "popular_culture": {
-      "literature": [],
+      "literature": [
+        "Zakariya al-Qazwini — ʿAjāʾib al-Makhlūqāt wa Gharāʾib al-Mawjūdāt (c. 1260)",
+        "Modern fantasy and role-playing bestiaries (e.g. Dungeons & Dragons treatment as a giant carnivorous rabbit)"
+      ],
       "film_tv": [],
-      "games": [],
+      "games": [
+        "Recurring as the 'Al-Mi'raj' creature in Dungeons & Dragons and other tabletop RPGs"
+      ],
       "other": []
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Zakariya al-Qazwini", "affiliation": "13th-century Persian polymath", "contribution": "Author of the earliest known sustained description of the al-Mi'raj in ʿAjāʾib al-Makhlūqāt", "period": "13th century" }
+    ],
+    "organizations": [
+      { "name": "Bavarian State Library (Bayerische Staatsbibliothek)", "url": "https://www.bsb-muenchen.de/", "focus": "Holds Cod. arab. 464, an early illustrated manuscript of Qazwini's Marvels of Things Created" }
+    ],
+    "ongoing_studies": "Continued manuscript study of Qazwini's text and of the wider Arabic ʿajāʾib literature; comparative work on the horned-hare motif across Eurasia."
   },
-  "sources": []
+
+  "sources": [
+    {
+      "id": "wikipedia-al-miraj",
+      "type": "website",
+      "title": "Al-Mi'raj",
+      "publication": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Al-Mi%27raj",
+      "accessed": "2026-05-07"
+    },
+    {
+      "id": "qazwini-aja'ib",
+      "type": "book",
+      "title": "ʿAjāʾib al-Makhlūqāt wa Gharāʾib al-Mawjūdāt (Marvels of Things Created and Miraculous Aspects of Things Existing)",
+      "authors": ["Zakariya al-Qazwini"],
+      "date": "c. 1260"
+    },
+    {
+      "id": "bsb-cod-arab-464",
+      "type": "archive",
+      "title": "Bavarian State Library, Cod. arab. 464 — illustrated Qazwini manuscript including al-Mi'raj",
+      "publication": "Bayerische Staatsbibliothek, Munich",
+      "date": "c. 1279/1280 or 1377"
+    }
+  ]
 }
